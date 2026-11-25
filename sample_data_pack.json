@@ -1,0 +1,258 @@
+{
+  "customers": [
+    {
+      "customer_id": "CUST-1001",
+      "plan_name": "Postpaid Rs 599",
+      "monthly_rental_rs": 599,
+      "tenure_years": 4,
+      "segment": "postpaid_individual"
+    },
+    {
+      "customer_id": "CUST-1002",
+      "plan_name": "Postpaid Rs 999",
+      "monthly_rental_rs": 999,
+      "tenure_years": 2,
+      "segment": "postpaid_individual"
+    },
+    {
+      "customer_id": "CUST-1003",
+      "plan_name": "Prepaid Rs 299",
+      "monthly_rental_rs": 299,
+      "tenure_years": 1,
+      "segment": "prepaid"
+    },
+    {
+      "customer_id": "CUST-1004",
+      "plan_name": "Postpaid family Rs 1,499",
+      "monthly_rental_rs": 1499,
+      "tenure_years": 6,
+      "segment": "postpaid_family"
+    },
+    {
+      "customer_id": "CUST-1005",
+      "plan_name": "Postpaid Rs 799",
+      "monthly_rental_rs": 799,
+      "tenure_years": 3,
+      "segment": "postpaid_individual"
+    },
+    {
+      "customer_id": "CUST-1006",
+      "plan_name": "Postpaid Rs 1,299",
+      "monthly_rental_rs": 1299,
+      "tenure_years": 5,
+      "segment": "postpaid_individual"
+    }
+  ],
+  "records": [
+    {
+      "customer_id": "CUST-1001",
+      "record_type": "ticket",
+      "record_id": "TKT-5521",
+      "date": "2026-09-20",
+      "source_system": "crm_ticketing",
+      "verified": true,
+      "category": "network_quality",
+      "cell_id": "CELL-BLR-402",
+      "status": "open",
+      "summary": "Dropped call complaint from home cell CELL-BLR-402."
+    },
+    {
+      "customer_id": "CUST-1001",
+      "record_type": "ticket",
+      "record_id": "TKT-5540",
+      "date": "2026-09-28",
+      "source_system": "crm_ticketing",
+      "verified": true,
+      "category": "network_quality",
+      "cell_id": "CELL-BLR-402",
+      "status": "open",
+      "summary": "Second dropped-call ticket from the same cell CELL-BLR-402."
+    },
+    {
+      "customer_id": "CUST-1001",
+      "record_type": "ticket",
+      "record_id": "TKT-5562",
+      "date": "2026-10-09",
+      "source_system": "crm_ticketing",
+      "verified": true,
+      "category": "network_quality",
+      "cell_id": "CELL-BLR-402",
+      "status": "open",
+      "summary": "Third dropped-call ticket from the same cell CELL-BLR-402 within 30 days."
+    },
+    {
+      "customer_id": "CUST-1001",
+      "record_type": "usage_metric",
+      "record_id": "USG-1001@2026-09",
+      "date": "2026-10-01",
+      "source_system": "usage_analytics",
+      "verified": true,
+      "category": "usage_decline",
+      "usage_change_pct": -35,
+      "summary": "Monthly mobile data usage dropped 35% month on month."
+    },
+    {
+      "customer_id": "CUST-1001",
+      "record_type": "agent_note",
+      "record_id": "NOTE-77",
+      "date": "2026-10-10",
+      "source_system": "agent_scratchpad",
+      "verified": false,
+      "category": "competitor_intent",
+      "summary": "Unverified draft agent note: customer might switch if not given 40% discount."
+    },
+    {
+      "customer_id": "CUST-1002",
+      "record_type": "ticket",
+      "record_id": "TKT-6610",
+      "date": "2026-10-02",
+      "source_system": "billing_crm",
+      "verified": true,
+      "category": "billing_dispute",
+      "dispute_group": "roaming_double_charge_1240",
+      "amount_rs": 1240,
+      "status": "resolved",
+      "summary": "Roaming double charge of Rs 1,240 marked resolved in billing system."
+    },
+    {
+      "customer_id": "CUST-1002",
+      "record_type": "call_transcript",
+      "record_id": "CALL-8821",
+      "date": "2026-10-12",
+      "source_system": "voice_ivr_transcripts",
+      "verified": true,
+      "category": "billing_dispute",
+      "dispute_group": "roaming_double_charge_1240",
+      "amount_rs": 1240,
+      "status": "open_dispute",
+      "summary": "Later call confirms roaming double charge of Rs 1,240 is still on the bill despite TKT-6610."
+    },
+    {
+      "customer_id": "CUST-1003",
+      "record_type": "ticket",
+      "record_id": "TKT-7012",
+      "date": "2026-10-04",
+      "source_system": "crm_ticketing",
+      "verified": true,
+      "category": "network_quality",
+      "cell_id": "CELL-MUM-118",
+      "status": "open",
+      "summary": "Single slow-data complaint reported; no repeat complaints."
+    },
+    {
+      "customer_id": "CUST-1003",
+      "record_type": "usage_metric",
+      "record_id": "USG-1003@2026-09",
+      "date": "2026-10-01",
+      "source_system": "usage_analytics",
+      "verified": true,
+      "category": "usage_stable",
+      "usage_change_pct": 2,
+      "summary": "Data usage stable (+2% month on month)."
+    },
+    {
+      "customer_id": "CUST-1004",
+      "record_type": "call_transcript",
+      "record_id": "CALL-9034",
+      "date": "2026-10-13",
+      "source_system": "voice_ivr_transcripts",
+      "verified": true,
+      "category": "competitor_intent",
+      "port_out_request": true,
+      "requested_discount_pct": 50,
+      "requested_duration_months": 6,
+      "status": "open",
+      "summary": "Customer mentions competitor offer and port-out request; asks for 50% off for 6 months."
+    },
+    {
+      "customer_id": "CUST-1004",
+      "record_type": "usage_metric",
+      "record_id": "USG-1004@2026-09",
+      "date": "2026-10-01",
+      "source_system": "usage_analytics",
+      "verified": true,
+      "category": "usage_stable",
+      "usage_change_pct": -5,
+      "summary": "Family plan data usage stable (-5% month on month)."
+    },
+    {
+      "customer_id": "CUST-1006",
+      "record_type": "ticket",
+      "record_id": "TKT-9104",
+      "date": "2026-10-05",
+      "source_system": "crm_ticketing",
+      "verified": true,
+      "category": "plan_fit",
+      "status": "open",
+      "summary": "Customer inquired about downgrading Postpaid Rs 1,299 due to unused international roaming add-on."
+    },
+    {
+      "customer_id": "CUST-1006",
+      "record_type": "call_transcript",
+      "record_id": "CALL-9150",
+      "date": "2026-10-11",
+      "source_system": "voice_ivr_transcripts",
+      "verified": true,
+      "category": "plan_fit",
+      "status": "open",
+      "summary": "Repeat contact requesting plan optimization to reduce monthly bill within standard discount limits."
+    },
+    {
+      "customer_id": "CUST-1006",
+      "record_type": "usage_metric",
+      "record_id": "USG-1006@2026-09",
+      "date": "2026-10-01",
+      "source_system": "usage_analytics",
+      "verified": true,
+      "category": "usage_decline",
+      "usage_change_pct": -32,
+      "summary": "Monthly data usage declined 32% month on month."
+    }
+  ],
+  "policies": [
+    {
+      "doc_id": "RET-POL",
+      "citation_id": "RET-POL@v1",
+      "title": "Retention Action Catalog & Authority Limits",
+      "version": "v1",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-12-31",
+      "verified": true,
+      "allowed_actions": ["plan_review", "network_escalation", "bill_correction", "callback"],
+      "max_bill_credit_rs": 500,
+      "max_discount_pct": 20,
+      "max_discount_months": 3,
+      "content": "Retention action catalog: plan_review, network_escalation, bill_correction, callback. Agent may give a bill credit up to Rs 500 or a plan discount up to 20% for 3 months; anything above needs a supervisor."
+    },
+    {
+      "doc_id": "NET-ESC",
+      "citation_id": "NET-ESC@v1",
+      "title": "Network Escalation Policy",
+      "version": "v1",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-12-31",
+      "verified": true,
+      "content": "Raise a network escalation when there are 3 or more coverage or dropped-call complaints from one location in 30 days."
+    },
+    {
+      "doc_id": "BILL-POL",
+      "citation_id": "BILL-POL@v1",
+      "title": "Billing Dispute Correction Policy",
+      "version": "v1",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-12-31",
+      "verified": true,
+      "content": "Disputed charges are corrected after verification; correction confirmed to the customer within 48 hours."
+    },
+    {
+      "doc_id": "OFFER-FEST",
+      "citation_id": "OFFER-FEST@v1",
+      "title": "Festive Retention Offer",
+      "version": "v1",
+      "valid_from": "2026-09-25",
+      "valid_to": "2026-10-08",
+      "verified": true,
+      "content": "Festive retention offer, 2 months at half rental, valid 2026-09-25 to 2026-10-08."
+    }
+  ]
+}
